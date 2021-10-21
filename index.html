@@ -27,6 +27,9 @@
 
             <div class="col-md-8 offset-md-2">
                 <h1 class="fs-3 text-center">Usuarios, perfiles, privilegios y roles.</h1>
+                <div class="text-center mt-5">
+                    <a href="https://unipanamericanaeduco.sharepoint.com/sites/Section_117716/Documentos%20compartidos/Forms/AllItems.aspx?id=%2Fsites%2FSection%5F117716%2FDocumentos%20compartidos%2FGeneral%2FEjercicio%20Guiado%20Creaci%C3%B3n%20Usuario%5F%5Froles%5F%5Fperfiles%2Epdf%2Epdf&parent=%2Fsites%2FSection%5F117716%2FDocumentos%20compartidos%2FGeneral&p=true&or=teams&originalPath=aHR0cHM6Ly91bmlwYW5hbWVyaWNhbmFlZHVjby5zaGFyZXBvaW50LmNvbS86Yjovcy9TZWN0aW9uXzExNzcxNi9FZHpCVi1PaGJLbERqeGFqUnFyN2NJVUJmVG1HNENrVzRQdEFYRm10Wm1IUDJBP3J0aW1lPXBNcFZGVEdVMlVn" target="_blanck" class="btn btn-primary">Guia completa</a>
+                </div>
                 <span class="text-center my-5 d-block">
                     <h6>Jose Luis Gaitan Quimbay</h6>
                     <h6>Diego Alejandro Rodriguez Guzmán</h6>
@@ -106,7 +109,8 @@
                 </table>
                 <h3 style="margin-top: 5rem;">Desarrollo</h3>
                 <hr>
-                <p> <span class="point" id="ejercicio1">1</span> Conectarse como usuario SYSTEM a la base y crear un usuario llamado
+                <p> <span class="point" id="ejercicio1">1</span> Conectarse como usuario SYSTEM a la base y crear un
+                    usuario llamado
                     "ADMINISTRADOR" autenticado por
                     la base de datos con contraseña admin. Indicar como "tablespace" por defecto USERS y como
                     "tablespace" temporar TEMP; asignar una cuota de 500K en el "tablespace" USERS.</p>
@@ -132,7 +136,8 @@
                     </div>
                 </div>
                 <hr>
-                <p><span class="point" id="ejercicio2">2</span> Abrir una sesión SQL plus o una nueva conexión en SQL developer e
+                <p><span class="point" id="ejercicio2">2</span> Abrir una sesión SQL plus o una nueva conexión en SQL
+                    developer e
                     intentar conectarse como usuario "administrador", ¿qué sucede?, ¿por qué?</p>
                 <div class="fw-bold my-4 text-primary">Código</div>
                 <img src="assets/img/schreen/07.png" class="img-fluid" alt="Acceder con usuario administrador">
@@ -141,7 +146,8 @@
                 <p>¿Por qué? Al momento de su creación no se le asigno ningun privilegio, un super usuario debe editar y
                     agregarle permisos.</p>
                 <hr>
-                <p> <span class="point" id="ejercicio3">3</span> Averiguar qué privilegios de sistema, roles y privilegios sobre objetos
+                <p> <span class="point" id="ejercicio3">3</span> Averiguar qué privilegios de sistema, roles y
+                    privilegios sobre objetos
                     tiene concedidos el usuario "ADMINISTRADOR" consultando las vistas
                     dba_role_privs, dba_tab_privs, dba_sys_privs (buscar en internet que contienen cada una de estas
                     vistas )
@@ -164,7 +170,8 @@
                 <img src="assets/img/schreen/13.png" class="img-fluid"
                     alt="resultado - busqueda de registros dba_sys_privs">
                 <hr>
-                <p> <span class="point" id="ejercicio4">4</span> Otrogar el privilegio "CREATE SESSION" al usuario administrador e
+                <p> <span class="point" id="ejercicio4">4</span> Otrogar el privilegio "CREATE SESSION" al usuario
+                    administrador e
                     intentar de nuevo la conexión SQL plus o SQL developer</p>
                 <div class="fw-bold my-4 text-primary">Código</div>
                 <img src="assets/img/schreen/14.png" class="img-fluid" alt="Asignamos privilegio de crear session">
@@ -173,7 +180,8 @@
                     alt="resultado - iniciamos sesión con el usuario ADMINISTRADOR">
 
                 <hr>
-                <p> <span class="point" id="ejercicio5">5a</span> Modificar la contraseña del usuario "ADMINISTRADOR" por "ADMIN",
+                <p> <span class="point" id="ejercicio5">5a</span> Modificar la contraseña del usuario "ADMINISTRADOR"
+                    por "ADMIN",
                     desconecta este usuario y vuelve a acceder a Oracle con el usuario "ADMINISTRADOR". Comprueba que se
                     ha modificado la contraseña</p>
                 <div class="fw-bold my-4 text-primary">Código</div>
@@ -209,7 +217,8 @@
                     alt="resultado - Desbloqueamos la cuenta para el usuario ADMINISTRADOR">
 
                 <hr>
-                <p><span class="point" id="ejercicio6">6</span> Conectarse como usuario "ADMINISTRADOR" y crear un usuario llamado
+                <p><span class="point" id="ejercicio6">6</span> Conectarse como usuario "ADMINISTRADOR" y crear un
+                    usuario llamado
                     "prueba00" que tenga como "TABLESPACE" por defecto USERS y como "TABLESPACE" temporal TEMP; asignar
                     una cuota de 500K en el "TABLESPACE" USERS. ¿Es posible hacerlo?</p>
                 <div class="fw-bold my-4 text-primary">Código</div>
@@ -220,7 +229,8 @@
                     alt="resultado - Creando usuario desde el pefil de ADMINISTRADOR">
 
                 <hr>
-                <p> <span class="point" id="ejercicio7">7</span> Conectado como usuario SYSTEM (en este caso root), otorgar el
+                <p> <span class="point" id="ejercicio7">7</span> Conectado como usuario SYSTEM (en este caso root),
+                    otorgar el
                     privilegio "CREATE USER" al usuario "ADMINISTRADOR" y repetir el ejercicio anterior</p>
                 <div class="fw-bold my-4 text-primary">Código</div>
                 <img src="assets/img/schreen/25.png" class="img-fluid"
@@ -230,7 +240,8 @@
                     alt="resultado - Iniciando sesión como usuario ROOT, otrogando permiso a usuario ADMINISTRADOR">
 
                 <hr>
-                <p> <span class="point" id="ejercicio8">8</span> Crea un nuevo usuario PRUEBA1 con clave PRUEBA1 y TABLESPACE USERS.
+                <p> <span class="point" id="ejercicio8">8</span> Crea un nuevo usuario PRUEBA1 con clave PRUEBA1 y
+                    TABLESPACE USERS.
                     Concédele el privilegio de conectarse a la BD. Trata de crear una tabla ¿Has podido? ¿Por qué?.
                     Concédele el privilegio "CREATE TABLE" y trata de crear de nuevo la tabla ¿Has podido?</p>
 
@@ -253,7 +264,7 @@
                     alt="resultado - Creando tabla con el usuario PRUEBA1">
 
                 <hr>
-                <p><span class="point" >9b</span> Como usuario "PRUEBA1", modifica su propia contraseña a "PRU1". ¿Puede
+                <p><span class="point">9b</span> Como usuario "PRUEBA1", modifica su propia contraseña a "PRU1". ¿Puede
                     modificar el propio usuario "PRUEBA1" su cuota? ¿Qué privilegio necesita? Asígnele dicho privilegio
                     desde Enterprise manager y comprueba que ahora el usuario "PRUEBA1" puede modificarse a sí mismo su
                     cuota por ejemplo asignándose una de 600K</p>
@@ -273,7 +284,8 @@
                     alt="resultado - Creando tabla con el usuario PRUEBA1">
 
                 <hr>
-                <p><span class="point" id="ejercicio10">10</span> Como usuari "ADMINISTRADOR" crea un nuevo usuario llamado "ORA1" con
+                <p><span class="point" id="ejercicio10">10</span> Como usuari "ADMINISTRADOR" crea un nuevo usuario
+                    llamado "ORA1" con
                     contraseña "ORA1" CUOTA 500K Y ESPACIOS USERS Y TEMP. Este nuevo usuario deberá poder conectarse a
                     la BD y crear tablas. Crea una tabla para el usuario "ORA1" ¿Puedes insertar datos o manipular la
                     tabla? ¿Puedes crear procedimientos, triggers, ...? Indica qué privilegios necesitarías. </p>
@@ -285,7 +297,8 @@
                     alt="resultado - Creando tabla con el usuario PRUEBA1">
 
                 <hr>
-                <p><span class="point" id="ejercicio11">11</span> Con el usuario administrador borra el usuario ora1. Indica los pasos
+                <p><span class="point" id="ejercicio11">11</span> Con el usuario administrador borra el usuario ora1.
+                    Indica los pasos
                     que has tenido que realizar para hacerlo.
                     El usuario administrador deberá tener privilegios Drop user. Para borrar el usuario ora1 deberá
                     estar desconectado y ejecutaremos como administrador drop
@@ -306,7 +319,8 @@
                 <img src="assets/img/schreen/42.png" class="img-fluid"
                     alt="resultado - Creando tabla con el usuario PRUEBA1">
                 <hr>
-                <p><span class="point" id="ejercicio12">12</span> Averiguar que usuarios de la base de datos tienen asignado el
+                <p><span class="point" id="ejercicio12">12</span> Averiguar que usuarios de la base de datos tienen
+                    asignado el
                     privilegio “create user” de
                     forma directa, para ello consulta la vista dba_sys_privs observa sus campos y qué quiere decir
                     cada uno y ejecuta la consulta adecuada sobre esta vista.
@@ -329,7 +343,8 @@
                     alt="resultado - Creando tabla con el usuario PRUEBA1">
 
                 <hr>
-                <p><span class="point" id="ejercicio14">14</span> Desbloquea desde el EM el usuario hr de la bd y ponle como contraseña
+                <p><span class="point" id="ejercicio14">14</span> Desbloquea desde el EM el usuario hr de la bd y ponle
+                    como contraseña
                     hr.
                     Consulta las tablas de las que dispone este usuario
                 </p>
@@ -341,7 +356,8 @@
                     alt="resultado - Creando tabla con el usuario PRUEBA1">
 
                 <hr>
-                <p><span class="point" id="ejercicio15">15</span> Concede permisos al usuario oracle4 para ejecutar consultas sobre la
+                <p><span class="point" id="ejercicio15">15</span> Concede permisos al usuario oracle4 para ejecutar
+                    consultas sobre la
                     tabla employees del
                     usuario hr (Crea previamente el usuario oracle4 con clave a 500k y tablespace users y temp,
                     concédele privilegios para conectarse y crear tablas, crea una tabla en el usuario oracle4 llámala
